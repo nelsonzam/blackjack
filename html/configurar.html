@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Configuración</title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  </head>
+
+  <body class"green">
+    <nav class="black" role="navigation">
+    <div class="nav-wrapper container">
+        <img src="../images/mini2.png" alt="" class="circle responsive-img">
+        <a id="logo-container" href="index.html" class="brand-logo">Twenty One</a>
+        <a class="white-text right">Configuración</a>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons"></i></a>
+    </div>
+  </nav>
+
+    <div class="container">
+      <div class="row center">
+        <h4></h4>
+          <form action="#">
+            <div class="row">
+                <div>
+                <h5>Puerto para UDP:</h5>
+                </div>
+                <div class="col s4 offset-s4">
+                  <input placeholder="20050" value="20050" id="udp" type="text" class="validate">   
+                </div>    
+            </div>
+            <div class="row">
+                <div>
+                <h5>Puerto para TCP:</h5>
+                </div>
+                <div class="col s4 offset-s4">
+                  <input placeholder="20060" value="20060" id="tcp" type="text" class="validate">   
+                </div>    
+            </div>
+            <div class="row">
+                <div>
+                <h5>IP de Broadcast:</h5>
+                </div>
+                <div class="col s4 offset-s4">
+                  <input placeholder="10.0.255.255" value="192.168.1.255" id="broadcast" type="text" class="validate">   
+                </div>    
+            </div>
+            <div class="row">
+                <div>
+                <h5>IP de Multicast:</h5>
+                </div>
+                <div class="col s4 offset-s4">
+                  <input placeholder="239.1.2.3" value="239.1.2.3" id="ipmulticast" type="text" class="validate">   
+                </div>    
+            </div>
+            <div class="row">
+                <div>
+                <h5>Puerto para Multicast:</h5>
+                </div>
+                <div class="col s4 offset-s4">
+                  <input placeholder="5551" value="5551" id="portmulticast" type="text" class="validate">   
+                </div>    
+            </div>
+            <div class="row">
+                <div>
+                <h5>Tiempo de envío:</h5>
+                </div>
+                <div class="col s4 offset-s4">
+                  <input placeholder="5" value="5" id="tiempo" type="text" class="validate">   
+                </div>    
+            </div>
+            <div class="row">
+                <div>
+                <h5>Numero de jugadores:</h5>
+                </div>
+                <div class="col s4 offset-s4">
+                  <input placeholder="1" value="1" id="espacios" type="text" class="validate">   
+                </div>    
+            </div>
+            <div class="row">
+              <button id="submit" class="btn waves-effect waves-light red" type="submit" name="action">Guardar
+              <i class="material-icons right">send</i>
+              </button>
+            </div>  
+          </form>    
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer">
+    <div class="row center marg">
+        <a class="white-text">Pedro Cadevilla</a></li>
+        <a class="white-text">Eddy Valencia</a></li>
+        <a class="white-text">Nelson Zambrano</a></li>
+    </div>
+  </footer>
+
+  </body>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="../js/materialize.js"></script>
+  <script src="../js/network.js"></script>
+  <script src="../js/configurar.js"></script>
+
+  
+</html>

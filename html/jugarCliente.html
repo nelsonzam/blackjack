@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>BlackJack</title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+</head>
+  <nav class="black" role="navigation">
+    <div class="nav-wrapper container">
+        <img src="../images/mini2.png" alt="" class="circle responsive-img">
+        <a id="logo-container" href="index.html" class="brand-logo">Twenty One</a>
+        <a class="white-text right">Cliente</a>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons"></i></a>
+    </div>
+  </nav>
+
+  <body>
+
+  <!---------------------------------------- UNIRSE --------------------------------------- -->
+  <div class="container" id="ocultar">
+      <div class="row" style="border-bottom: 2px solid rgba(0,0,0,0.2);">
+        <div class="col s3 offset-s1  ">
+          <h5>IP</h5>
+        </div>
+        <div class="col s2">
+          <h5>Sala</h5>
+        </div>
+        <div class="col s3">
+          <h5>Espacios</h5>
+        </div>
+        <div class="col">
+          <h5>Tiempo</h5>
+        </div>                   
+      </div>
+
+      <div class="row" id="rooms">
+
+      </div>
+
+      <div class="row" id="ocultar2">
+        <a class="btn-floating btn-large waves-effect waves-light red right"><i class="material-icons">play_arrow</i></a>
+      </div>
+    </div>
+
+    <script type="text/template" id="room-template"> 
+      <div class="row">
+          <div class="col">
+                  <input name="rooms" type="radio" value="<%= ip %>" id="<%= ip %>" data-roomName="<%= roomName %>"  data-espacios="<%= espacios %>" data-tiempo="<%= tiempo %>"/>
+                  <label for="<%= ip %>"></label> 
+              </div>
+              <div class="col s3">
+                  <h5><%= ip %></h5>
+              </div>
+              <div class="col s2" style="margin-left:10px;">
+                  <h5><%= roomName %></h5>
+              </div>
+              <div class="col s3">
+                  <h5 id=<%= roomName %>e><%= espacios %></h5>
+              </div>
+              <div class="col">
+                  <h5 id=<%= roomName %>t><%= tiempo %></h5>
+            </div> 
+        </div>
+    </script>
+  <!---------------------------------------- JUGAR CLIENTE --------------------------------------- -->
+    <div class="container img_juego hide" id="imagen_oculta">
+      <div id="juego">
+        <div id="dealer">
+          <div class="carta" id="mano_d"></div>  
+        </div>
+        <div id="jugador">
+          <div class="carta" id="mano_j"></div>  
+        </div>
+        <div class="" id="dinero">
+          <div class="" id="total_dinero"></div>
+          <div class="" id="ganancia"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row center hide" id="btn_oculto">
+      <button id="pedir" class="btn waves-effect waves-light red" type="submit" name="action">Pedir
+      </button>
+      <button id="quedarse" class="btn waves-effect waves-light red" type="submit" name="action">Quedarse
+      </button>
+      <button id="bono" class="btn waves-effect waves-light red" type="submit" name="action">Bono
+      </button>
+    </div>
+    </div>
+  </footer>
+  <!--  Scripts-->
+   <script src="../js/vendor/jquery-2.1.1.min.js"></script>
+  <script src="../js/vendor/underscore.min.js"></script>
+  <script src="../js/materialize.js"></script>
+  <script src="../js/network.js"></script>
+  <script src="../js/jugarCliente.js"></script>
+     
+  </body>
+</html>

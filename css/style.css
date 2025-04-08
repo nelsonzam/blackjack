@@ -1,0 +1,39 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+.marg{
+	color: #fff;
+	margin-top: 10px;
+}
+.img_juego{
+	background: transparent url("../images/table1.png");
+	width: 1000px;
+	height: 550px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+.carta{
+	background: #FFF;
+	border: 6px solid #FFF;
+	border-radius: 5px;
+	box-shadow: 0 0 1px #000;
+	display: inline-block;
+	height: 106px;
+	margin: 0 5px;
+	position: absolute;
+	width: 79px;
+	left: 602px;
+	top: 182px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>BlackJack</title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+</head>
+  <nav class="black" role="navigation">
+    <div class="nav-wrapper container">
+        <img src="../images/mini2.png" alt="" class="circle responsive-img">
+        <a id="logo-container" href="index.html" class="brand-logo">Twenty One</a>
+        <a class="white-text right">Sala de Juego</a>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons"></i></a>
+    </div>
+  </nav>
+
+  <body>
+    <div class="container img_juego">
+      <div id="juego">
+        <div id="dealer">
+          <div class="carta" id="mano_d"></div>  
+        </div>
+        <div id="jugador">
+          <div class="carta" id="mano_j"></div>  
+        </div>
+        <div class="" id="dinero">
+          <div class="" id="total_dinero"></div>
+          <div class="" id="ganancia"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row center">
+      <button id="repartir" class="btn waves-effect waves-light red" type="submit" name="action">INICIAR
+      </button>
+      <button id="peir" class="btn waves-effect waves-light red" type="submit" name="action">Pedir
+      </button>
+      <button id="repartir" class="btn waves-effect waves-light red" type="submit" name="action">Quedarse
+      </button>
+    </div>
+
+  <footer class="page-footer">
+    <div class="row center marg">
+        <a class="white-text">Pedro Cadevilla</a></li>
+        <a class="white-text">Eddy Valencia</a></li>
+        <a class="white-text">Nelson Zambrano</a></li>
+    </div>
+  </footer>
+  <!--  Scripts-->
+   <script src="../js/vendor/jquery-2.1.1.min.js"></script>
+  <script src="../js/vendor/underscore.min.js"></script>
+  <script src="../js/materialize.js"></script>
+  <script src="../js/network.js"></script>
+  <script src="../js/servidor.js"></script>
+  <script src="../js/jugarServidor.js"></script>
+     
+  </body>
+</html>
